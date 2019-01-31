@@ -113,6 +113,8 @@ int shaiHuludMeMoar(char *xRes, char *yRes){
         printf("[+] Wrote file OsirisJailbreak to /var/mobile/Media/Downloads/ successfully!\n");
     }
     
+    
+    // Change res stuff...
     bool changeRes = true;
     
     char *cat;
@@ -140,7 +142,6 @@ int shaiHuludMeMoar(char *xRes, char *yRes){
         reboot(0x400);
     }
     
-    // Change res stuff...
     printf("x value: %s, y value: %s", xRes, yRes);
     printf("%s", cat);
     

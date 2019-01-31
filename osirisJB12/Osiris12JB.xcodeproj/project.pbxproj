@@ -28,7 +28,7 @@
 		736424B422018DCD0029FD97 /* kc_parameters.c in Sources */ = {isa = PBXBuildFile; fileRef = 736424AF22018DCD0029FD97 /* kc_parameters.c */; };
 		736424B522018DCD0029FD97 /* pac.c in Sources */ = {isa = PBXBuildFile; fileRef = 736424B022018DCD0029FD97 /* pac.c */; };
 		A7717316220368BA00466261 /* kernel_call.c in Sources */ = {isa = PBXBuildFile; fileRef = A7717315220368BA00466261 /* kernel_call.c */; };
-		A7717318220368EC00466261 /* qilin.o in Frameworks */ = {isa = PBXBuildFile; fileRef = A7717317220368EC00466261 /* qilin.o */; };
+		A794841E2203957600017001 /* qilin.o in Frameworks */ = {isa = PBXBuildFile; fileRef = A794841D2203957600017001 /* qilin.o */; };
 		D6EF120A22026C11009BECC6 /* offsets.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EF120922026C11009BECC6 /* offsets.m */; };
 		D6F9A4142201E99F00A1F682 /* exploit_additions.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F9A40A2201E99F00A1F682 /* exploit_additions.c */; };
 		D6F9A4152201E99F00A1F682 /* kexecute.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F9A40C2201E99F00A1F682 /* kexecute.c */; };
@@ -83,7 +83,7 @@
 		736424B122018DCD0029FD97 /* user_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = user_client.h; sourceTree = "<group>"; };
 		736424B222018DCD0029FD97 /* kc_parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kc_parameters.h; sourceTree = "<group>"; };
 		A7717315220368BA00466261 /* kernel_call.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel_call.c; sourceTree = "<group>"; };
-		A7717317220368EC00466261 /* qilin.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = qilin.o; path = ../../qilin.o; sourceTree = "<group>"; };
+		A794841D2203957600017001 /* qilin.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = qilin.o; path = ../../Downloads/qilin.o; sourceTree = "<group>"; };
 		D6EF120822026C11009BECC6 /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsets.h; sourceTree = "<group>"; };
 		D6EF120922026C11009BECC6 /* offsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = offsets.m; sourceTree = "<group>"; };
 		D6F9A40A2201E99F00A1F682 /* exploit_additions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exploit_additions.c; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7717318220368EC00466261 /* qilin.o in Frameworks */,
+				A794841E2203957600017001 /* qilin.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +246,7 @@
 		D6F9A4232201FBA200A1F682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A7717317220368EC00466261 /* qilin.o */,
+				A794841D2203957600017001 /* qilin.o */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
