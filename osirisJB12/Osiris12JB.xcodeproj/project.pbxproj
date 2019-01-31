@@ -27,15 +27,15 @@
 		736424B322018DCD0029FD97 /* user_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 736424AE22018DCD0029FD97 /* user_client.c */; };
 		736424B422018DCD0029FD97 /* kc_parameters.c in Sources */ = {isa = PBXBuildFile; fileRef = 736424AF22018DCD0029FD97 /* kc_parameters.c */; };
 		736424B522018DCD0029FD97 /* pac.c in Sources */ = {isa = PBXBuildFile; fileRef = 736424B022018DCD0029FD97 /* pac.c */; };
+		A7717316220368BA00466261 /* kernel_call.c in Sources */ = {isa = PBXBuildFile; fileRef = A7717315220368BA00466261 /* kernel_call.c */; };
+		A7717318220368EC00466261 /* qilin.o in Frameworks */ = {isa = PBXBuildFile; fileRef = A7717317220368EC00466261 /* qilin.o */; };
 		D6EF120A22026C11009BECC6 /* offsets.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EF120922026C11009BECC6 /* offsets.m */; };
-		D6F9A4002201CEDA00A1F682 /* kernel_call.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F9A3FF2201CEDA00A1F682 /* kernel_call.c */; };
 		D6F9A4142201E99F00A1F682 /* exploit_additions.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F9A40A2201E99F00A1F682 /* exploit_additions.c */; };
 		D6F9A4152201E99F00A1F682 /* kexecute.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F9A40C2201E99F00A1F682 /* kexecute.c */; };
 		D6F9A4162201E99F00A1F682 /* kutils.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F9A40E2201E99F00A1F682 /* kutils.c */; };
 		D6F9A4182201E99F00A1F682 /* offsetof.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F9A4122201E99F00A1F682 /* offsetof.c */; };
 		D6F9A41A2201EAC100A1F682 /* patchfinder64.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F9A4192201EAC100A1F682 /* patchfinder64.c */; };
 		D6F9A4202201EC5A00A1F682 /* beginOsiris.c in Sources */ = {isa = PBXBuildFile; fileRef = D6F9A41E2201EC5A00A1F682 /* beginOsiris.c */; };
-		D6F9A4252201FBA300A1F682 /* qilin.o in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F9A4242201FBA300A1F682 /* qilin.o */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,9 +82,10 @@
 		736424B022018DCD0029FD97 /* pac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pac.c; sourceTree = "<group>"; };
 		736424B122018DCD0029FD97 /* user_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = user_client.h; sourceTree = "<group>"; };
 		736424B222018DCD0029FD97 /* kc_parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kc_parameters.h; sourceTree = "<group>"; };
+		A7717315220368BA00466261 /* kernel_call.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel_call.c; sourceTree = "<group>"; };
+		A7717317220368EC00466261 /* qilin.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = qilin.o; path = ../../qilin.o; sourceTree = "<group>"; };
 		D6EF120822026C11009BECC6 /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsets.h; sourceTree = "<group>"; };
 		D6EF120922026C11009BECC6 /* offsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = offsets.m; sourceTree = "<group>"; };
-		D6F9A3FF2201CEDA00A1F682 /* kernel_call.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kernel_call.c; path = "../../../../NonceReboot12XX-master-2/noncereboot1131UI/exploit/voucher_swap/kernel_call.c"; sourceTree = "<group>"; };
 		D6F9A40A2201E99F00A1F682 /* exploit_additions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exploit_additions.c; sourceTree = "<group>"; };
 		D6F9A40B2201E99F00A1F682 /* exploit_additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exploit_additions.h; sourceTree = "<group>"; };
 		D6F9A40C2201E99F00A1F682 /* kexecute.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kexecute.c; sourceTree = "<group>"; };
@@ -96,7 +97,6 @@
 		D6F9A4192201EAC100A1F682 /* patchfinder64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = patchfinder64.c; path = Osiris/PatchFinder/patchfinder64.c; sourceTree = SOURCE_ROOT; };
 		D6F9A41E2201EC5A00A1F682 /* beginOsiris.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = beginOsiris.c; sourceTree = "<group>"; };
 		D6F9A41F2201EC5A00A1F682 /* beginOsiris.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = beginOsiris.h; sourceTree = "<group>"; };
-		D6F9A4242201FBA300A1F682 /* qilin.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = qilin.o; path = ../qilin.o; sourceTree = "<group>"; };
 		D6F9A4262201FBAE00A1F682 /* QiLin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiLin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F9A4252201FBA300A1F682 /* qilin.o in Frameworks */,
+				A7717318220368EC00466261 /* qilin.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +158,7 @@
 		7364247D2201815C0029FD97 /* voucher_swap */ = {
 			isa = PBXGroup;
 			children = (
+				A7717315220368BA00466261 /* kernel_call.c */,
 				7364247E2201815C0029FD97 /* kernel_memory.h */,
 				7364247F2201815C0029FD97 /* log.c */,
 				736424802201815C0029FD97 /* parameters.c */,
@@ -185,7 +186,6 @@
 				736424932201815C0029FD97 /* log.h */,
 				736424942201815C0029FD97 /* voucher_swap.c */,
 				736424952201815C0029FD97 /* kernel_alloc.c */,
-				D6F9A3FF2201CEDA00A1F682 /* kernel_call.c */,
 				736424962201815C0029FD97 /* kernel_slide.c */,
 				736424972201815C0029FD97 /* platform.h */,
 			);
@@ -246,7 +246,7 @@
 		D6F9A4232201FBA200A1F682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6F9A4242201FBA300A1F682 /* qilin.o */,
+				A7717317220368EC00466261 /* qilin.o */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -339,13 +339,13 @@
 				736424982201815C0029FD97 /* log.c in Sources */,
 				2143CA0B20E7BDA900AFB745 /* ViewController.m in Sources */,
 				736424A22201815C0029FD97 /* voucher_swap.c in Sources */,
-				D6F9A4002201CEDA00A1F682 /* kernel_call.c in Sources */,
 				736424B322018DCD0029FD97 /* user_client.c in Sources */,
 				736424B522018DCD0029FD97 /* pac.c in Sources */,
 				736424B422018DCD0029FD97 /* kc_parameters.c in Sources */,
 				736424A32201815C0029FD97 /* kernel_alloc.c in Sources */,
 				D6F9A4182201E99F00A1F682 /* offsetof.c in Sources */,
 				D6F9A4152201E99F00A1F682 /* kexecute.c in Sources */,
+				A7717316220368BA00466261 /* kernel_call.c in Sources */,
 				2143CA0A20E7BDA900AFB745 /* AppDelegate.m in Sources */,
 				D6F9A41A2201EAC100A1F682 /* patchfinder64.c in Sources */,
 				2143C9F820E7BD6A00AFB745 /* main.m in Sources */,
@@ -491,8 +491,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9967JQKYTS;
 				ENABLE_BITCODE = NO;
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "exploit/voucher_swap/kernel_call exploit/voucher_swap/ exploit/voucher_swap/headers";
 				INFOPLIST_FILE = Osiris/Info.plist;
@@ -506,7 +506,7 @@
 					"-framework",
 					IOKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.osiris.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.osiris.12.olivr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,8 +518,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9967JQKYTS;
 				ENABLE_BITCODE = NO;
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "exploit/voucher_swap/kernel_call exploit/voucher_swap/ exploit/voucher_swap/headers";
 				INFOPLIST_FILE = Osiris/Info.plist;
@@ -534,7 +534,7 @@
 					"-framework",
 					IOKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.osiris.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.osiris.12.olivr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

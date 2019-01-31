@@ -99,7 +99,7 @@ int beginQiLin(){
     }
     return -1;
 }
-int shaiHuludMeMoar(){
+int shaiHuludMeMoar(char *xRes, char *yRes){
     if (ShaiHuludMe(0) == 0){
         printf("[i] Escaping THE FUCK out of the Sandbox...\n");
     }
@@ -111,5 +111,38 @@ int shaiHuludMeMoar(){
         printf("[i] Suck Sid! Up yours, dear SandBox!\n");
         printf("[+] Wrote file OsirisJailbreak to /var/mobile/Media/Downloads/ successfully!\n");
     }
+    
+    bool changeRes = true;
+    
+
+    
+    char *cat;
+    
+    asprintf(&cat, "<?xml version=\"1.0\" encoding=\"UTF-8\"?> \
+             <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> \
+             <plist version=\"1.0\"> \
+             <dict> \
+             <key>canvas_height</key> \
+             <integer>%s</integer> \
+             <key>canvas_width</key> \
+             <integer>%s</integer> \
+             </dict> \
+             </plist> \
+             ", yRes, xRes);
+    
+    if (changeRes) {
+        FILE *target;
+        target = fopen("/var/mobile/Library/Preferences/com.apple.iokit.IOMobileGraphicsFamily.plist", "w");
+        
+        fprintf(target, "%s", cat);
+        
+        printf("Resolution changed, please reboot.\n");
+        fclose(target);
+    }
+    
+    // Change res stuff...
+    printf("x value: %s, y value: %s", xRes, yRes);
+    printf("%s", cat);
+    
     return 0;
 }

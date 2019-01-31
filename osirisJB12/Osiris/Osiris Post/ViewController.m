@@ -30,6 +30,7 @@
 @end
 
 @implementation ViewController
+@synthesize xRes, yRes;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -77,7 +78,7 @@
 -(void) shaiHuludME{
    [self.jbYolo setTitle:@"Escaping SandBox!" forState:UIControlStateNormal];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        if (shaiHuludMeMoar() == 0){
+        if (shaiHuludMeMoar([self.xRes.text UTF8String], [self.yRes.text UTF8String]) == 0){
             _jbYolo.enabled = false;
             [self.jbYolo setTitle:@"Exploit Suck Sid!" forState:UIControlStateNormal];
             sleep(1);

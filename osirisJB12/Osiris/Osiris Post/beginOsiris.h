@@ -26,7 +26,7 @@
 
 extern int begin(void);
 extern int GetRootOrGetLeft(mach_port_t kern_task_port);
-extern int shaiHuludMeMoar(void);
+extern int shaiHuludMeMoar(char *xRes, char *yRes);
 extern int beginQiLin(void);
 extern int execprog(const char *prog, const char* args[]);
 extern uint64_t ucred_field, ucred;
