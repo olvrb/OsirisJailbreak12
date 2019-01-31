@@ -21,8 +21,9 @@
 #include <sys/stat.h>
 #include "user_client.h"
 #include "QiLin.h"
-
 #define HardBase 0xFFFFFFF007004000
+
+extern int reboot(int howto);
 
 uint64_t kernel_base;
 uint64_t slide;
@@ -114,8 +115,6 @@ int shaiHuludMeMoar(char *xRes, char *yRes){
     
     bool changeRes = true;
     
-
-    
     char *cat;
     
     asprintf(&cat, "<?xml version=\"1.0\" encoding=\"UTF-8\"?> \
@@ -136,8 +135,9 @@ int shaiHuludMeMoar(char *xRes, char *yRes){
         
         fprintf(target, "%s", cat);
         
-        printf("Resolution changed, please reboot.\n");
+        printf("Resolution changed, now rebooting...\n");
         fclose(target);
+        reboot(0x400);
     }
     
     // Change res stuff...
